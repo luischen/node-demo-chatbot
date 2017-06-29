@@ -1,0 +1,19 @@
+.fileupload{
+    padding:5px;
+    border:1px solid;
+    float:left;
+}
+.uploadButton{
+    float:left;
+    margin-left:10px;
+    line-height:20px;
+    padding:5px;
+    background-color: aquamarine;
+}
+.sub{
+    font-size:14px;
+    margin-left:20px;
+}
+.hint{
+    color:red;
+}

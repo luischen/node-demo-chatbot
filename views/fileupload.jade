@@ -1,0 +1,10 @@
+extends layout
+block link
+    link(rel='stylesheet', href='/stylesheets/file.css')
+block content
+    .container
+        .hint #{message}
+        form(action="/fileReader/upload",method="post",enctype="multipart/form-data")
+            input(type="file",name="fileImage",class="fileupload")
+            input(type="submit",value="upload",class="uploadButton")
+

@@ -3,7 +3,7 @@ var router = express.Router();
 var fs = require("fs");
 
 var multer  = require('multer');
-var upload = multer({dest:'/resource/'});
+var upload = multer({dest:'resource/'});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

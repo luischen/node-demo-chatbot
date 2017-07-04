@@ -1,15 +1,6 @@
 extends layout
 block link
   link(rel='stylesheet', href='/stylesheets/index.css')
+
 block content
-  h1= header
-        small  &copy;Luis
-  p(class="subtitle") learn nodejs step by step with samples
-  ul
-    li
-      a(href="fileReader") Local Txt reader sample
-    li
-      a(href="crawler") Crawler sample
-    li
-      a(href="logAnalyze") Log analyze sample
-    li More...
+  div!=md

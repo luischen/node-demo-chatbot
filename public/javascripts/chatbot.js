@@ -17,7 +17,7 @@ function GetData(){
     xhr.onreadystatechange=function(){
         if(xhr.readyState==4){
             if(xhr.status==200){
-                var tex_answer = "小柚子说："+ xhr.responseText;
+                var tex_answer = "小橙子说："+ xhr.responseText;
                 appendText(tex_answer);
             }
         }

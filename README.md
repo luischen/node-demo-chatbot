@@ -1,6 +1,6 @@
 ### 说明
 
-NodeJs入门例子，通过简单的操作熟悉NodeJs常用的类库。
+NodeJs入门例子，通过简单的操作熟悉NodeJs常用的类库。<br>
 *所有代码基于Express风格编写，使用webstorm开发。*
 
 
@@ -8,7 +8,8 @@ NodeJs入门例子，通过简单的操作熟悉NodeJs常用的类库。
 
 1. [文件上传显示](fileReader "文件上传显示")
 2. [简单爬虫](crawler "简单爬虫")
-3. [更多想法联系我...](mailto:chellman@126.com?subject=Node demo suggestion "chellman@126.com")
+3. [调戏机器人](chat "聊天机器人")
+4. [更多想法联系我...](mailto:chellman@126.com?subject=Node demo suggestion "chellman@126.com")
 
 
 ### End

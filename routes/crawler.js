@@ -17,10 +17,31 @@ router.get('/', function(req, res, next) {
             $('.xieceprolit').each(function(){
                 all_data += $.html(this);
             })
-            res.render('crawler', { title: '机器人网求购数据',keyword:keyword,all_data:all_data});
+
+            if($('.pages')){
+                $('.pages a').each(function(i){
+                    if(i == 1){
+                        var getUrl = $(this).attr("href");
+                        request(getUrl, function(error, response, body) {
+                            if (!error && response.statusCode == 200) {
+                                $_ = cheerio.load(body);
+                                $_('.xieceprolit').each(function(){
+                                    all_data += $_.html(this);
+                                })
+                                res.render('crawler', { title: '机器人网求购数据',keyword:keyword,all_data:all_data});
+                            }
+                        })
+                    }else{
+                        res.render('crawler', { title: '机器人网求购数据',keyword:keyword,all_data:all_data});
+                    }
+
+                })
+            }else{
+                res.render('crawler', { title: '机器人网求购数据',keyword:keyword,all_data:all_data});
+            }
         }
     })
-});
 
+});
 
 module.exports = router;

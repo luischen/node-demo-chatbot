@@ -6,7 +6,7 @@ var markdown = require("markdown").markdown;
 /* GET home page. */
 router.get('/', function(req, res, next) {
     var result = fs.readFileSync("../README.md").toString();
-    res.render('index', { title: 'Node Demo with Express' ,md:markdown.toHTML(result)});
+    res.render('index', { title: 'Node Demo for Chatbot' ,md:markdown.toHTML(result)});
 });
 
 module.exports = router;

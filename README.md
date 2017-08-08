@@ -1,15 +1,27 @@
-### 说明
+# 说明
 
-NodeJs入门例子，通过简单的操作熟悉NodeJs常用的类库。<br>
-*所有代码基于Express风格编写，使用webstorm开发。*
+使用Node进行聊天机器人chatbot的扩展研究，旨在：
 
+- 熟悉Node的基本使用
+- 了解聊天机器人的基本原理
+- 了解人工智能在聊天机器人领域的应用
 
-**目录 (Table of Contents)**
+*PS：所有代码基于Express风格编写，使用webstorm开发。*
 
-1. [文件上传显示](fileReader "文件上传显示")
-2. [简单爬虫](crawler "简单爬虫")
-3. [调戏机器人](chat "聊天机器人")
-4. [更多想法联系我...](mailto:chellman@126.com?subject=Node demo suggestion "chellman@126.com")
+# 项目的开发思路如下：
+1. 集成聊天机器人的API，实现基本的对话功能
+2. 集成聊天机器人的知识库API，实现批量上传知识库的功能
+3. 实现关键词嗅探功能
 
+### 进阶分支
+-   NLU & NLP
+-   机器学习
 
-### End
+# 项目使用
+1.   下载项目并导入到IDE（webstorm）
+2.   运行项目，访问localhost:3000 访问主页
+3.   通过地址localhost:3000/chat 访问实时聊天页面
+
+# 建议或意见
+**联系：**[chellman@126.com](mailto:chellman@126.com "chellman@126.com")
+

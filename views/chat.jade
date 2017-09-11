@@ -4,8 +4,11 @@ block link
 block content
     .container
         h1=title
-        ul(id="chat_content",style="height:400px;padding:10px;border:1px solid;overflow-y:scroll;")
-            li="小橙子说：hi，你好啊，来吧互相伤害吧"
+        input(type="button", class="self-off",style="width:15%;height:30px;padding:5px;", id="selfChat", value="切换自嗨模式",onclick="toggleSelfchat()")
+        input(type="text", style="width:80%;height:20px;padding:5px;float:right;display:none;", placeholder="开始一段自嗨吧",maxlength="50",id="topicField"
+        ,onkeydown="startSelfchat()")
+        ul(id="chat_content",style="height:400px;border:1px solid;overflow-y:scroll;")
+            li="小柚子说：hi，你好啊，来吧互相伤害吧"
         input(type="text", style="width:80%;height:20px;padding:5px", placeholder="尽情调戏吧，互相伤害吧",maxlength="50",id="question"
         ,onkeydown="FinishInput()")
         input(type="button", style="width:15%;height:30px;padding:5px;float:right;", id="doChatButton", value="发送",onclick="GetData()")

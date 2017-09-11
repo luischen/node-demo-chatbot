@@ -31,7 +31,6 @@ router.get('/send', function(req, res0, next) {
             body += data;
         }).on('end', function(){
             res0.writeHead(200,{"Content-Type":"text/plain; charset=utf-8"});
-            console.log(body);
             res0.write(JSON.parse(body)["text"]);
             res0.end();
         });

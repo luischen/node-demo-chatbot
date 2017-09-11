@@ -11,3 +11,19 @@ a {
   margin:0px;
   padding:15px;
 }
+
+#chat_content{
+  list-style: none;
+  padding-left:0px;
+}
+#chat_content li{
+  padding:10px;
+  color:#8B814C;
+}
+#chat_content li:nth-child(even){
+  background-color:#C6E2FF;
+}
+
+#chat_content li:nth-child(odd){
+  background-color:#FFE4C4;
+}
